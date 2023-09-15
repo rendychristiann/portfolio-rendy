@@ -6,15 +6,20 @@ window.onscroll = function(){
     // Mengambil posisi header terhadap ujung atas halaman
     // Kalau page di-scroll, value dari fixedNav akan bertambah
     const fixedNav = header.offsetTop;
+    const toTop = document.querySelector('#to-top');
 
     // Jika scroll yang sekarang dilakukan lebih besar dari fixedNav
     if(window.pageYOffset > fixedNav){
         // Tambahkan class ke header
         header.classList.add('navbar-fixed');
+        toTop.classList.remove('hidden');
+        toTop.classList.add('flex');
     } 
     // Kalau sudah kembali ke posisi awal
     else {
-        header.classList.remove('navbar-fixed')
+        header.classList.remove('navbar-fixed');
+        toTop.classList.remove('flex');
+        toTop.classList.add('hidden');
     }
 }
 
@@ -27,3 +32,38 @@ hamburger.addEventListener('click', function(){
     // Munculkan nav-menu
     navMenu.classList.toggle('hidden');
 });
+
+// Klik di luar hamburger -> Menu hilang
+window.addEventListener('click', function(e){
+    if(e.target != hamburger && e.target != navMenu){
+        hamburger.classList.remove('hamburger-active');
+        navMenu.classList.add('hidden');
+    }
+});
+
+// Dark mode toggle
+const darkToggle = document.querySelector('#dark-toggle');
+const html = document.querySelector('html');
+darkToggle.addEventListener('click', function(){
+    if (darkToggle.checked){
+        html.classList.add('dark');
+    }
+    else{
+        html.classList.remove('dark');
+    }
+});
+
+// Send email
+function sendEmail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "rendyportfolio@gmail.com",
+        Password : "askingalexandria123",
+        To : 'rendychristiann@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "Portfolio Form Message",
+        Body : "Name: " + document.getElementById("name").value + "<br> Email: " + document.getElementById("email") + "<br> Message: " + document.getElementById("message")   
+    }).then(
+      message => alert("Message Sent Succesfully!")
+    );
+}

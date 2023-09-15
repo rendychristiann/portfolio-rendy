@@ -21,19 +21,32 @@
                         <span class="hamburger-line transition duration-300 ease-in-out"></span>
                         <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
                     </button>
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-700 lg:dark:bg-transparent">
                         <ul class="block lg:flex">
                             <li class="group">
-                                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Home</a>
+                                <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Home</a>
                             </li>
                             <li class="group">
-                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">About Me</a>
+                                <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">About Me</a>
                             </li>
                             <li class="group">
-                                <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
+                                <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Portfolio</a>
                             </li>
                             <li class="group">
-                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
+                                <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Contact</a>
+                            </li>
+                            <li class="flex items-center py-2 mx-8">
+                                <div class="flex">
+                                    <span class="mr-2 text-sm text-slate-500">Light</span>
+                                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                                    <label for="dark-toggle">
+                                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                                            <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-400 ease-in-out">
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <span class="ml-2 text-sm text-slate-500">Dark</span>
+                                </div>
                             </li>
                         </ul>
                     </nav>
@@ -43,18 +56,18 @@
     </header>
     <!-- Header End   -->
     <!-- Hero Section Start -->
-    <section id="home" class="pt-36">
+    <section id="home" class="pt-36 dark:bg-dark">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2">
-                    <h1 class="text-base font-semibold text-primary md:text-xl">Hello Everyone!👋<span class="block font-bold text-dark text-4xl mt-1 mb-5 lg:text-5xl">I am Rendy Christian</span></h1>
-                    <p class="font-medium text-secondary mb-10 leading-relaxed text-xl lg:text-2xl">Undergraduate Electrical Engineering</span> Student at <span class="text-dark font-bold">Universitas Indonesia</span></p>
-                    <a href="mailto:rendychristiann@gmail.com" target="_blank" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Contact Me</a>
+                    <h1 class="text-base font-semibold text-primary md:text-xl">Hello Everyone!👋<span class="block font-bold text-dark text-4xl mt-1 mb-5 lg:text-5xl dark:text-white">I am Rendy Christian</span></h1>
+                    <p class="font-medium text-primary mb-10 leading-relaxed text-xl lg:text-2xl "><span id="typeit"></span></p>
+                    <a href="mailto:rendychristiann@gmail.com" target="_blank" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out dark:text-white">Contact Me</a>
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2">
                     <div class="mt-10 relative lg:mt-9 lg:right-0">
-                        <img src="dist/img/Rendy_Christian.png" alt="Rendy Christian" class="max-w-full mx-auto">
-                        <span class="absolute -bottom-20 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
+                        <img src="dist/img/Rendy_Christian.png" alt="Rendy Christian" class="relative max-w-full mx-auto z-10">
+                        <span class="absolute -bottom-20 left-1/2 -translate-x-1/2 md:scale-125">
                             <svg width="400" height="500" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="#6366f1" d="M67.4,-17.1C75.4,2.6,61.6,34.2,40.6,47.4C19.7,60.6,-8.4,55.4,-30.7,39.8C-53.1,24.2,-69.6,-1.9,-63.5,-19C-57.4,-36.1,-28.7,-44.2,0.5,-44.3C29.7,-44.5,59.5,-36.7,67.4,-17.1Z" transform="translate(100 100) scale(1.1)" />
                             </svg>
@@ -67,19 +80,19 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32">
+    <section id="about" class="pt-36 pb-32 dark:bg-dark">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-10 lg:w-1/2 ">
                     <h4 class="font-bold uppercase text-primary text-lg mb-3">About Me</h4>
-                    <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">I have deep interest in <span class="text-dark font-bold">internet-of-things (IoT), wireless communication, data analytics, and software
-                        development.</span> I also have a great desire to <span class="text-dark font-bold">explore these subjects</span> and always striving
-                        to <span class="text-dark font-bold">apply my learned knowledge</span> to find creative solutions.</p>
+                    <p class="font-medium text-base text-secondary max-w-xl lg:text-lg dark:text-white">I have deep interest in <span class="text-dark font-bold dark:text-white">internet-of-things (IoT), wireless communication, data analytics, and software
+                        development.</span> I also have a great desire to <span class="text-dark font-bold dark:text-white">explore these subjects</span> and always striving
+                        to <span class="text-dark font-bold dark:text-white">apply my learned knowledge</span> to find creative solutions.</p>
                 </div>
                 <div class="w-full px-4 lg:w-1/2">
                     <h3 class="font-semibold uppercase text-primary text-lg mb-4 ">Let's Connect!</h3>
-                    <p class="font-medium text-base text-secondary mb-5 lg:text-lg"><span class="text-dark font-bold">Connect</span> with me on social media to discover more about my latest projects, inspirations, and insights!</p>
-                    <div class="flex items-center justify-center">
+                    <p class="font-medium text-base text-secondary mb-5 lg:text-lg"><span class="text-dark font-bold dark:text-white">Connect</span> with me on social media to discover more about my latest projects, inspirations, and insights!</p>
+                    <div class="flex items-center justify-center dark:text-white">
                         <!-- LinkedIn -->
                         <a href="https://www.linkedin.com/in/rendy-christian-siahaan/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
                             <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
@@ -170,12 +183,12 @@
     <!-- Portfolio Section End   -->
 
     <!-- Card Portfolio Section Start -->
-    <section id="portfolio" class="pt-36 pb-32 bg-slate-100">
+    <section id="portfolio" class="pt-36 pb-32 bg-slate-100 dark:bg-slate-800">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
                     <h4 class="font-semibold text-lg text-primary mb-2 lg:text-2xl">Portfolio</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4">Newest Project</h2>
+                    <h2 class="font-bold text-dark text-3xl mb-4 dark:text-white">Newest Project</h2>
                     <p class="font-medium text-md text-secondary">My portfolio illustrates my enthusiasm for applying my skills to solve real-life problems, aiming to create a <span class="font-bold">meaningful impact.</span></p>
                 </div>
             </div>
@@ -251,28 +264,28 @@
     <!-- Card Portfolio Section End -->
 
     <!-- Contact Section Start -->
-    <section id="contact" class="pt-36 pb-32">
+    <section id="contact" class="pt-36 pb-32 dark:bg-dark">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
                     <h4 class="font-semibold text-lg text-primary mb-2 lg:text-2xl">Contact</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4">Contact Me</h2>
+                    <h2 class="font-bold text-dark text-3xl mb-4 dark:text-white">Contact Me</h2>
                     <p class="font-medium text-md text-secondary">Please fill out the form below, and I'll get back to you as soon as possible. I'm excited to hear from you and discuss how we can work together.</p>
                 </div>
             </div>
-            <form>
+            <form onsubmit="sendEmail(); reset(); return false;">
                 <div class="w-full lg:w-2/3 lg:mx-auto">
                 <div class="w-full px-4 mb-8">
                     <label for="name" class="text-base font-bold text-primary ">Name</label>
-                    <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" placeholder="Full name ">
+                    <input type="text" id="name" class="w-full bg-slate-200 mt-3 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" placeholder="Full name ">
                 </div>
                 <div class="w-full px-4 mb-8">
                     <label for="email" class="text-base font-bold text-primary ">Email</label>
-                    <input type="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" placeholder="Email address ">
+                    <input type="email" id="email" class="w-full bg-slate-200 mt-3 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" placeholder="Email address ">
                 </div>
                 <div class="w-full px-4 mb-8">
                     <label for="message" class="text-base font-bold text-primary ">Message</label>
-                    <textarea type="text" id="message" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32" placeholder="Enter your message! "></textarea>
+                    <textarea type="text" id="message" class="w-full bg-slate-200 mt-3 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32" placeholder="Enter your message! "></textarea>
                 </div>
                 <div class="w-full px-4">
                     <button class="text-white text-base font-semibold bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Send</button>
@@ -363,8 +376,50 @@
         </div>
     </footer>
     <!-- Footer End   -->
-    <script src="dist/js/script.js">
 
+    <!-- Back to top Start -->
+    <a href="#home" id="to-top" class="fixed hidden justify-center items-center z-[9999] p-4 bottom-4 right-4 rounded-full h-14 w-14 bg-primary hover:animate-pulse ">
+        <span class="block h-5 w-5 mt-2 border-t-2 border-l-2 rotate-45 "></span>
+    </a>
+    <!-- Back to top end -->
+    <script src="dist/js/script.js">
     </script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js">
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+        
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new TypeIt("#typeit", {
+            speed: 50,
+            waitUntilVisible: true,
+            loop: true
+        })
+        .type("Internet-of-Things Engineer", {delay: 2000})
+        .delete()
+        .type("Telecommunication Engineer", {delay: 2000})
+        .delete()
+        .type("Software Engineer", {delay: 2000})
+        .delete()
+        .type("Undergraduate Electrical Engineering Student at Universitas Indonesia")
+        .exec(async () => {
+        //-- Return a promise that resolves after something happens.
+        await new Promise((resolve, reject) => {
+        setTimeout(() => {
+            return resolve();
+        }, 6000);
+        });
+    })
+        .delete()
+        .go();
+      });
+    </script>
+    
 </body>
 </html>
+
+<!-- new TypeIt("#typeit", {
+    //   strings: ["Undergraduate Electrical Engineering Student"],
+    }).go();
+  }); -->
