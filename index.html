@@ -55,16 +55,29 @@
         </div>
     </header>
     <!-- Header End   -->
+
+    <!-- Thumbnail section start -->
+    <section id="thumbnail" class="pt-36 pb-32 dark:bg-dark">
+        <div class="text-center justify-center pt-24 pb-32">
+            <h1 class="thumb moving text-3xl font-bold text-primary pb-16 lg:text-5xl">Hello Everyone!</h1>
+            <p class="text-2xl font-light text-dark dark:text-white"><span id="thumbnail_typeit"></span></p>
+        </div>
+        <div class="w-full items-center justify-center text-center px-4">
+            <a href="#home" class="thumb moving w-full items-center text-base font-semibold text-white bg-primary py-5 px-8 overflow-hidden  rounded-full hover:shadow-lg hover:opacity-80 hover:scale-105 transition duration-2000 ease-in-out dark:text-white"> Let's Go!</a>
+        </div>
+    </section>
+    <!-- Thumbnail section end  -->
+
     <!-- Hero Section Start -->
     <section id="home" class="pt-36 dark:bg-dark">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2">
-                    <h1 class="text-base font-semibold text-primary md:text-xl">Hello Everyone!👋<span class="block font-bold text-dark text-4xl mt-1 mb-5 lg:text-5xl dark:text-white">I am Rendy Christian</span></h1>
+                    <h1 class="hero moving text-base font-semibold text-primary md:text-xl">Hello! I am<span class="hero moving block font-bold text-dark text-4xl mt-1 mb-5 lg:text-5xl dark:text-white">Rendy Christian</span></h1>
                     <p class="font-medium text-primary mb-10 leading-relaxed text-xl lg:text-2xl "><span id="typeit"></span></p>
                     <a href="mailto:rendychristiann@gmail.com" target="_blank" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out dark:text-white">Contact Me</a>
                 </div>
-                <div class="w-full self-end px-4 lg:w-1/2">
+                <div class="hero moving w-full self-end px-4 lg:w-1/2">
                     <div class="mt-10 relative lg:mt-9 lg:right-0">
                         <img src="dist/img/Rendy_Christian.png" alt="Rendy Christian" class="relative max-w-full mx-auto z-10">
                         <span class="absolute -bottom-20 left-1/2 -translate-x-1/2 md:scale-125">
@@ -80,18 +93,18 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32 dark:bg-dark">
+    <section id="about" class=" pt-36 pb-32 dark:bg-dark">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-10 lg:w-1/2 ">
-                    <h4 class="font-bold uppercase text-primary text-lg mb-3">About Me</h4>
-                    <p class="font-medium text-base text-secondary max-w-xl lg:text-lg dark:text-white">I have deep interest in <span class="text-dark font-bold dark:text-white">internet-of-things (IoT), wireless communication, data analytics, and software
+                    <h4 class="about-sec moving font-bold uppercase text-primary text-lg mb-3">About Me</h4>
+                    <p class="about-sec moving font-medium text-base text-secondary max-w-xl lg:text-lg dark:text-white">I have deep interest in <span class="text-dark font-bold dark:text-white">internet-of-things (IoT), wireless communication, data analytics, and software
                         development.</span> I also have a great desire to <span class="text-dark font-bold dark:text-white">explore these subjects</span> and always striving
                         to <span class="text-dark font-bold dark:text-white">apply my learned knowledge</span> to find creative solutions.</p>
                 </div>
                 <div class="w-full px-4 lg:w-1/2">
-                    <h3 class="font-semibold uppercase text-primary text-lg mb-4 ">Let's Connect!</h3>
-                    <p class="font-medium text-base text-secondary mb-5 lg:text-lg"><span class="text-dark font-bold dark:text-white">Connect</span> with me on social media to discover more about my latest projects, inspirations, and insights!</p>
+                    <h3 class="about-sec moving font-semibold uppercase text-primary text-lg mb-4 ">Let's Connect!</h3>
+                    <p class="about-sec moving font-medium text-base text-secondary mb-5 lg:text-lg"><span class="text-dark font-bold dark:text-white">Connect</span> with me on social media to discover more about my latest projects, inspirations, and insights!</p>
                     <div class="flex items-center justify-center dark:text-white">
                         <!-- LinkedIn -->
                         <a href="https://www.linkedin.com/in/rendy-christian-siahaan/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
@@ -119,80 +132,17 @@
     </section>
     <!-- About Section End   -->
 
-    <!-- Portfolio Section (Without Card) Start --> 
-    <!-- <section id="portfolio" class="pt-36 pb-16 bg-slate-100 ">
-        <div class="container">
-            <div class="w-full px-4">
-                <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-primary mb-2 ">Portfolio</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4">Newest Project</h2>
-                    <p class="font-medium text-md text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum iusto quibusdam cumque nesciunt accusantium placeat.</p>
-                </div>
-            </div>
-            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="dist/img/edspert.png" alt="IoT Agriculture Monitoring" width="w-full">
-                    </div>
-                    <h3 class="font-semibold text-dark text-xl mt-5 mb-3">Smart Farming Monitoring for Smart City</h3>
-                    <p class="font-medium text-base text-secondary">Final project of Edspert IoT Bootcamp for agriculture data monitoring. The data collected from the system is stored in the mySQL database and presented real-time on a web socket, created using PHP and Bootstrap 4.</p>
-                </div>
-
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="dist/img/tumor.png" alt="Brain Tumor Detection from MRI Image" width="w-full">
-                    </div>
-                    <h3 class="font-semibold text-dark text-xl mt-5 mb-3">Brain Tumor Detection from MRI Image</h3>
-                    <p class="font-medium text-base text-secondary">Final Project of Multimedia & Signal Processing course for brain tumor detection of MRI Image using MATLAB. This project was made with Edge Detection algorithm and Image Filtering method to detecting area of tumor.</p>
-                </div>
-
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="dist/img/survey.png" alt="freeCodeCamp Survey Form" width="w-full">
-                    </div>
-                    <h3 class="font-semibold text-dark text-xl mt-5 mb-3">freeCodeCamp Survey Form</h3>
-                    <p class="font-medium text-base text-secondary">Project of freeCodeCamp Responsive Web Design course to create simple survey form. This project was made with basic HTML and CSS.</p>
-                </div>
-
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="dist/img/magazine.png" alt="freeCodeCamp Layout Magazine" width="w-full">
-                    </div>
-                    <h3 class="font-semibold text-dark text-xl mt-5 mb-3">freeCodeCamp Layout Magazine</h3>
-                    <p class="font-medium text-base text-secondary">Project of freeCodeCamp Responsive Web Design course to create simple magazine layout using grid. This project was made with basic HTML and CSS.</p>
-                </div>
-
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="dist/img/clustering.png" alt="K-Means Clustering of Mall Visitor Dataset" width="w-full">
-                    </div>
-                    <h3 class="font-semibold text-dark text-xl mt-5 mb-3">K-Means Clustering of Mall Visitor Dataset</h3>
-                    <p class="font-medium text-base text-secondary">This project developed a machine learning model using the clustering K-Means method to determine mall customer clusters based on annual revenue versus sales levels using Python.</p>
-                </div>
-
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="dist/img/tribute.png" alt="freeCodeCamp Tribute Page" width="w-full">
-                    </div>
-                    <h3 class="font-semibold text-dark text-xl mt-5 mb-3">freeCodeCamp Tribute Page</h3>
-                    <p class="font-medium text-base text-secondary">Project of freeCodeCamp Responsive Web Design course to create simple tribute page using flexbox. This project was made with basic HTML and CSS.</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- Portfolio Section End   -->
-
     <!-- Card Portfolio Section Start -->
-    <section id="portfolio" class="pt-36 pb-32 bg-slate-100 dark:bg-slate-800">
+    <section id="portfolio" class=" pt-36 pb-32 bg-slate-100 dark:bg-slate-800">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-primary mb-2 lg:text-2xl">Portfolio</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4 dark:text-white">Newest Project</h2>
-                    <p class="font-medium text-md text-secondary">My portfolio illustrates my enthusiasm for applying my skills to solve real-life problems, aiming to create a <span class="font-bold">meaningful impact.</span></p>
+                    <h4 class="porto moving font-semibold text-lg text-primary mb-2 lg:text-2xl">Portfolio</h4>
+                    <h2 class="porto moving font-bold text-dark text-3xl mb-4 dark:text-white">Newest Project</h2>
+                    <p class="porto moving font-medium text-md text-secondary">My portfolio illustrates my enthusiasm for applying my skills to solve real-life problems, aiming to create a <span class="font-bold">meaningful impact.</span></p>
                 </div>
             </div>
-            <div class="flex flex-wrap items-center">
+            <div class=" flex flex-wrap items-center">
                 <div class="w-full px-4 lg:w-1/2 xl:w-1/2">
                     <div class="bg-indigo-200 rounded-xl shadow-xl overflow-hidden mb-10 hover:scale-105 transition-transform duration-300">
                         <a href="https://github.com/rendychristiann/iot-agriculture-monitoring" target="_blank"><img src="dist/img/edspert.png" alt="IoT Agriculture Monitoring" class="w-full"></a>
@@ -264,17 +214,17 @@
     <!-- Card Portfolio Section End -->
 
     <!-- Contact Section Start -->
-    <section id="contact" class="pt-36 pb-32 dark:bg-dark">
+    <section id="contact" class=" pt-36 pb-32 dark:bg-dark">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-primary mb-2 lg:text-2xl">Contact</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4 dark:text-white">Contact Me</h2>
-                    <p class="font-medium text-md text-secondary">Please fill out the form below, and I'll get back to you as soon as possible. I'm excited to hear from you and discuss how we can work together.</p>
+                    <h4 class="contact moving font-semibold text-lg text-primary mb-2 lg:text-2xl">Contact</h4>
+                    <h2 class="contact moving font-bold text-dark text-3xl mb-4 dark:text-white">Contact Me</h2>
+                    <p class="contact moving font-medium text-md text-secondary">Please fill out the form below, and I'll get back to you as soon as possible. I'm excited to hear from you and discuss how we can work together.</p>
                 </div>
             </div>
             <form onsubmit="sendEmail(); reset(); return false;">
-                <div class="w-full lg:w-2/3 lg:mx-auto">
+                <div class="contact moving w-full lg:w-2/3 lg:mx-auto">
                 <div class="w-full px-4 mb-8">
                     <label for="name" class="text-base font-bold text-primary ">Name</label>
                     <input type="text" id="name" class="w-full bg-slate-200 mt-3 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" placeholder="Full name ">
@@ -382,12 +332,12 @@
         <span class="block h-5 w-5 mt-2 border-t-2 border-l-2 rotate-45 "></span>
     </a>
     <!-- Back to top end -->
-    <script src="dist/js/script.js">
+    <script defer src="dist/js/script.js">
     </script>
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js">
     </script>
     <script src="https://smtpjs.com/v3/smtp.js">
-        
+
     </script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -396,6 +346,8 @@
             waitUntilVisible: true,
             loop: true
         })
+        .type("Full-Time Learner", {delay: 2000})
+        .delete()
         .type("Internet-of-Things Engineer", {delay: 2000})
         .delete()
         .type("Telecommunication Engineer", {delay: 2000})
@@ -414,6 +366,9 @@
         .delete()
         .go();
       });
+    </script>
+    <script>
+        
     </script>
     
 </body>

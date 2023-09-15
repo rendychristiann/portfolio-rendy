@@ -67,3 +67,38 @@ function sendEmail(){
       message => alert("Message Sent Succesfully!")
     );
 }
+
+document.addEventListener("DOMContentLoaded", function(){
+    new TypeIt('#thumbnail_typeit', {
+     speed: 60,
+     waitUntilVisible: true
+    })
+    .pause(1000)
+    .type("This is my porefol", {delay: 500})
+    .move(-3)
+    .delete(1)
+    .type("t")
+    .move(null, {to: "END"})
+    .type("io wens", {delay: 500})
+    .move(-1)
+    .delete(1)
+    .type("b")
+    .move(null, {to: "END"})
+    .type("ite.")
+    .go();
+ });
+
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+        else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+const hiddenElements = document.querySelectorAll(".moving");
+hiddenElements.forEach((el) => observer.observe(el));

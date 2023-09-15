@@ -10,6 +10,7 @@
 
 body{
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
 }
 
 .navbar-fixed {
@@ -36,4 +37,62 @@ body{
 /* Toggle button */
 #dark-toggle:checked ~ label div.toggle-circle{
     @apply translate-x-3;
+}
+
+/* animate */
+.moving{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%); 
+    transition: all 2s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0); 
+}
+
+@media(prefers-reduced-motion){
+    .moving{
+        transition: none;
+    }
+}
+
+.thumb:nth-child(1){
+    transition-delay: 200ms;
+}
+.thumb:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.hero:nth-child(0){
+    transition-delay: 200ms;
+}
+.hero:nth-child(1){
+    transition-delay: 400ms;
+}
+.hero:nth-child(2){
+    transform: none; 
+    transition-delay: 600ms;
+}
+.about-sec:nth-child(0){
+    transition-delay: 200ms;
+}
+.about-sec:nth-child(1){
+    transition-delay: 400ms;
+}
+.about-sec:nth-child(2){
+    transition-delay: 600ms;
+}
+.about-sec:nth-child(3){
+    transition-delay: 800ms;
+}
+.porto:nth-child(2){
+    transition-delay: 400ms;
+}
+.porto:nth-child(3){
+    transition-delay: 800ms;
+}
+.porto:nth-child(1){
+    transition-delay: 200ms;
 }
