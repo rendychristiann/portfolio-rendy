@@ -71,7 +71,8 @@ function sendEmail(){
 document.addEventListener("DOMContentLoaded", function(){
     new TypeIt('#thumbnail_typeit', {
      speed: 60,
-     waitUntilVisible: true
+     waitUntilVisible: true,
+     loop: true
     })
     .pause(1000)
     .type("This is my porefol", {delay: 500})
@@ -84,7 +85,19 @@ document.addEventListener("DOMContentLoaded", function(){
     .delete(1)
     .type("b")
     .move(null, {to: "END"})
-    .type("ite.")
+    .type("ite.", {delay: 5000})
+    .break({ delay: 500 })
+    .break({ delay: 500 })
+    .type("<em> Scroll down! </em>")
+    .exec(async () => {
+        //-- Return a promise that resolves after something happens.
+        await new Promise((resolve, reject) => {
+        setTimeout(() => {
+            return resolve();
+        }, 7000);
+        });
+    })
+    .delete()
     .go();
  });
 

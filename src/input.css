@@ -96,3 +96,6 @@ body{
 .porto:nth-child(1){
     transition-delay: 200ms;
 }
+.skills .moving{
+    transition: all 1s;
+}
