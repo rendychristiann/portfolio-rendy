@@ -74,7 +74,8 @@
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2">
                     <h1 class="hero moving text-base font-semibold text-primary md:text-xl">Hello! I am<span class="hero moving block font-bold text-dark text-4xl mt-1 mb-5 lg:text-5xl dark:text-white">Rendy Christian</span></h1>
-                    <p class="font-medium text-primary mb-10 leading-relaxed text-xl lg:text-2xl "><span id="typeit"></span></p>
+                    <p class="font-medium text-primary mb-5 leading-relaxed text-xl lg:text-2xl "><span id="typeit"></span></p>
+                    <p class="font-medium text-dark mb-10 leading-relaxed text-xl lg:text-2xl dark:text-white ">Undergraduate <span class="font-bold text-primary">Electrical Engineering</span> Student at Universitas Indonesia</p>
                     <a href="mailto:rendychristiann@gmail.com" target="_blank" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out dark:text-white">Contact Me</a>
                 </div>
                 <div class="hero moving w-full self-end px-4 lg:w-1/2">
@@ -401,21 +402,19 @@
             waitUntilVisible: true,
             loop: true
         })
-        .type("Full-Time Learner", {delay: 2000})
+        .type("<b>Internet-of-Things Engineer", {delay: 2000})
         .delete()
-        .type("Internet-of-Things Engineer", {delay: 2000})
+        .type("<b>Telecommunication Engineer", {delay: 2000})
         .delete()
-        .type("Telecommunication Engineer", {delay: 2000})
+        .type("<b>Software Engineer", {delay: 2000})
         .delete()
-        .type("Software Engineer", {delay: 2000})
-        .delete()
-        .type("Undergraduate Electrical Engineering Student at Universitas Indonesia")
+        .type("<b>Full-Time Learner", {delay: 2000})
         .exec(async () => {
         //-- Return a promise that resolves after something happens.
         await new Promise((resolve, reject) => {
         setTimeout(() => {
             return resolve();
-        }, 6000);
+        }, 4000);
         });
     })
         .delete()
